@@ -2,6 +2,8 @@ var config = {
   email: {},
 };
 
+config.urlreal = "https://valerestan.johncastiblanco.lat";
+
 config.puerto = 3001;
 /* config.db = 'ibero09'; */
 
@@ -20,6 +22,8 @@ config.listablanca = [
   "http://localhost:4200",
   "http://localhost:9876",
   "http://localhost:3001",
+  undefined,
+  "https://valerestan.johncastiblanco.lat",
 ];
 
 module.exports.config = config;
