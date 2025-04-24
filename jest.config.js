@@ -1,11 +1,14 @@
-export default {
-  testEnvironment: "node",
-  transform: {
-    "^.+\\.(js|jsx|ts|tsx)$": "babel-jest",
-  },
-  moduleFileExtensions: ["js", "json", "node"],
-  collectCoverage: true,
-  coverageDirectory: "coverage",
-  coverageProvider: "v8",
-  testPathIgnorePatterns: ["/node_modules/"],
+module.exports = {
+  reporters: [
+    "default",
+    [
+      "jest-html-reporter",
+      {
+        pageTitle: "Reporte de Pruebas Unitarias de Brayan Narvaez ",
+        outputPath: "./test-report.html",
+        includeFailureMsg: true,
+        includeSuiteFailure: true,
+      },
+    ],
+  ],
 };
